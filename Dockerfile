@@ -3,7 +3,7 @@ FROM gradle:8.5.0-jdk17 AS build
 WORKDIR /app
 
 # Copy only relevant Gradle files first to cache dependencies
-COPY build.gradle.kts settings.gradle.kts gradle.properties /app/
+COPY build.gradle.kts gradle.properties /app/
 COPY gradle /app/gradle
 
 # Download dependencies
