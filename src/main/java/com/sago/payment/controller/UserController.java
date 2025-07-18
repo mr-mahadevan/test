@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @PostMapping
-    public ResponseEntity<String> saveUser(@RequestBody @Valid UserRequest userRequest){
-        return ResponseEntity.ok("ok");
+    public ResponseEntity<UserRequest> saveUser(@RequestBody @Valid UserRequest userRequest){
+        return ResponseEntity.ok(userRequest);
     }
 }
