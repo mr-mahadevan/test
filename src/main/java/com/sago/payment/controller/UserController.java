@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 @Slf4j
 @RestController
-@RequestMapping(value = "api/users", produces = "application/json", consumes = "application/json")
+@RequestMapping(value = "api/users")
 public class UserController {
 
 
